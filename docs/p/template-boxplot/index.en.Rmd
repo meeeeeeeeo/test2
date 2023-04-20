@@ -1,0 +1,28 @@
+---
+title: template boxplot
+author: changming.yang
+date: 2023-04-19
+description: This is the description
+image: boxplot-1.png
+categories:
+  - ggplot2
+  - R
+tags:
+  - distribution
+  - boxplot
+---
+
+example:
+
+```{r boxplot}
+library(ggplot2)
+
+ggplot(mtcars, aes(x=as.factor(cyl), y=mpg)) + 
+  geom_boxplot(fill="slateblue", alpha=0.2) + 
+  xlab("cyl")
+```
+
+```{r session-info}
+sessionInfo()
+```
+
